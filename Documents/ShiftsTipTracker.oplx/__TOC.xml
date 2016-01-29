@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <omniplan xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" xmlns:opnx="http://www.omnigroup.com/namespace/OmniPlan/v2">
-  <window x="79" y="440" w="1252" h="667">
+  <window x="0" y="0" w="1920" h="1145">
     <editing-scenario>amIRPd6-IOu</editing-scenario>
     <view>task</view>
     <overview/>
@@ -8,15 +8,15 @@
     <status-display>basic</status-display>
     <task-view>
       <split-view-divider-position>306</split-view-divider-position>
-      <outline x="0" y="60" w="306" h="537">
+      <outline x="0" y="340" w="306" h="1088">
         <column name="Violations" width="20"/>
         <column name="Notes" width="20"/>
         <column name="Title" width="191"/>
         <column name="Effort" width="70"/>
-        <expanded-items idrefs="t8 t29 t14 t9 t22"/>
-        <selected-items-at-filter-time idrefs="t25 t21 t13 t9 t26 t18 t30 t22 t14 t27 t19 t10 t31 t23 t15 t28 t11 t32 t24 t16 t7 t29 t12 t20 t33 t8 t17"/>
+        <expanded-items idrefs="t14 t9 t65 t29 t22 t8 t67 t66"/>
+        <selected-items-at-filter-time idrefs="t58 t26 t77 t13 t8 t32 t51 t9 t70 t59 t27 t14 t65 t33 t78 t52 t20 t71 t28 t47 t15 t66 t53 t29 t72 t48 t67 t54 t22 t49 t60 t17 t55 t23 t74 t10 t18 t69 t61 t56 t24 t75 t11 t62 t19 t30 t57 t76 t31"/>
       </outline>
-      <gantt-view x="-54" y="60" w="944" h="537">
+      <gantt-view x="-44.5" y="340" w="1612" h="1088">
         <view-mode>actual</view-mode>
         <dependency-lines/>
         <constraints/>
@@ -63,13 +63,14 @@
     </task-view>
     <resource-view>
       <split-view-divider-position>306</split-view-divider-position>
-      <outline x="0" y="0" w="306" h="571">
+      <outline x="0" y="0" w="306" h="537">
         <column name="Notes" width="20"/>
         <column name="Type" width="49"/>
         <column name="Resource" width="135"/>
         <column name="#" width="75"/>
+        <selected-items-at-filter-time idrefs="r3 r2"/>
       </outline>
-      <timeline x="-70" y="0" w="916" h="571">
+      <timeline x="8309.5" y="0" w="916" h="537">
         <offtime-display>weekends</offtime-display>
         <show-project-end/>
         <task-bar-label task-type="group" position="left">
@@ -136,8 +137,8 @@ End:</group-table-style>
     </network-view>
   </window>
   <project>
-    <next-task-id>34</next-task-id>
-    <next-resource-id>2</next-resource-id>
+    <next-task-id>84</next-task-id>
+    <next-resource-id>4</next-resource-id>
     <scenario id="amIRPd6-IOu" name="Actual" filename="Actual.xml"/>
     <date-display dates="true" times="true" seconds="false"/>
     <numbering-style>wbs</numbering-style>

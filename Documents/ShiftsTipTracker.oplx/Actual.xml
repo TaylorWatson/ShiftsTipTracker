@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" xmlns:opns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="amIRPd6-IOu">
+  <start-date>2016-01-15T13:00:00.000Z</start-date>
+  <prototype-task>
+    <task id="t-2">
+      <title>Task 1</title>
+      <effort>28800</effort>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-3">
+      <title>Milestone 1</title>
+      <type>milestone</type>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-4">
+      <title>Group 1</title>
+      <type>group</type>
+    </task>
+  </prototype-task>
+  <prototype-resource>
+    <resource id="r-2">
+      <name>Resource 1</name>
+      <type>Staff</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-3">
+      <name>Equipment 1</name>
+      <type>Equipment</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-4">
+      <name>Material 1</name>
+      <type>Material</type>
+      <units-available>0</units-available>
+      <efficiency>0</efficiency>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-5">
+      <name>Group 1</name>
+      <type>Group</type>
+    </resource>
+  </prototype-resource>
+  <top-resource idref="r-1"/>
+  <resource id="r-1">
+    <type>Group</type>
+    <schedule>
+      <schedule-day day-of-week="sunday">
+        <time-span start-time="36000" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="36000" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="36000" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="36000" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="36000" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="36000" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday">
+        <time-span start-time="36000" end-time="86400"/>
+      </schedule-day>
+      <calendar name="Time Off" editable="yes" overtime="no"/>
+      <calendar name="Overtime" editable="yes" overtime="yes"/>
+    </schedule>
+    <child-resource idref="r1"/>
+    <child-resource idref="r2"/>
+    <child-resource idref="r3"/>
+  </resource>
+  <resource id="r1">
+    <name>Taylor</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r2">
+    <name>Andrew</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r3">
+    <name>Both</name>
+    <type>Staff</type>
+  </resource>
+  <top-task idref="t-1"/>
+  <task id="t-1">
+    <type>group</type>
+    <child-task idref="t8"/>
+    <child-task idref="t9"/>
+    <child-task idref="t29"/>
+    <child-task idref="t14"/>
+    <child-task idref="t66"/>
+    <child-task idref="t65"/>
+    <child-task idref="t67"/>
+  </task>
+  <task id="t8">
+    <title>Design Phase</title>
+    <type>group</type>
+    <start-constraint-date>2016-01-15T13:00:00.000Z</start-constraint-date>
+    <child-task idref="t20"/>
+    <child-task idref="t10"/>
+    <child-task idref="t13"/>
+    <child-task idref="t11"/>
+    <start-no-earlier-than>2016-01-15T13:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t9">
+    <title>Deliverables</title>
+    <type>group</type>
+    <child-task idref="t15"/>
+    <child-task idref="t17"/>
+    <child-task idref="t18"/>
+    <child-task idref="t19"/>
+    <child-task idref="t47"/>
+    <child-task idref="t48"/>
+    <child-task idref="t49"/>
+    <prerequisite-task idref="t8"/>
+    <prerequisite-task idref="t29"/>
+  </task>
+  <task id="t10">
+    <title>Setup Xarmin Environment</title>
+    <effort>50400</effort>
+    <start-constraint-date>2016-01-16T22:00:00.000Z</start-constraint-date>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2016-01-16T22:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t11">
+    <title>Setup StoryBoard</title>
+    <effort>28800</effort>
+    <start-constraint-date>2016-01-15T15:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t20"/>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2016-01-15T15:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t13">
+    <title>Create Wireframes</title>
+    <effort>151200</effort>
+    <start-constraint-date>2016-01-16T15:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t11"/>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2016-01-16T15:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t14">
+    <title>Art Phase</title>
+    <type>group</type>
+    <start-constraint-date>2016-03-26T14:00:00.000Z</start-constraint-date>
+    <child-task idref="t22"/>
+    <child-task idref="t23"/>
+    <child-task idref="t24"/>
+    <prerequisite-task idref="t9"/>
+    <start-no-earlier-than>2016-03-26T14:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t15">
+    <title>First meeting with faculty director</title>
+    <effort>49500</effort>
+    <start-constraint-date>2016-01-19T15:15:00.000Z</start-constraint-date>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2016-01-19T15:15:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t17">
+    <title>Submit Team Charter</title>
+    <effort>28800</effort>
+    <start-constraint-date>2016-01-19T15:00:00.000Z</start-constraint-date>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2016-01-19T15:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t18">
+    <title>Submit Project Charter</title>
+    <effort>28800</effort>
+    <start-constraint-date>2016-01-19T15:00:00.000Z</start-constraint-date>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2016-01-19T15:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t19">
+    <title>Finish Project Plan</title>
+    <effort>351000</effort>
+    <start-constraint-date>2016-01-19T15:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2016-01-19T15:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t20">
+    <title>Determine Project Scope</title>
+    <effort>75600</effort>
+    <start-constraint-date>2016-01-15T15:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t10" kind="SF"/>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2016-01-15T15:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t22">
+    <title>Create UI Elements</title>
+    <type>group</type>
+    <start-constraint-date>2016-03-26T14:00:00.000Z</start-constraint-date>
+    <child-task idref="t26"/>
+    <child-task idref="t28"/>
+    <child-task idref="t27"/>
+    <start-no-earlier-than>2016-03-26T14:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t23">
+    <title>Create Splash pages</title>
+    <effort>51300</effort>
+    <start-constraint-date>2016-03-29T14:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t24"/>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2016-03-29T14:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t24">
+    <title>Create Logo</title>
+    <effort>151200</effort>
+    <start-constraint-date>2016-03-26T14:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2016-03-26T14:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t26">
+    <title>Buttons</title>
+    <effort>302400</effort>
+    <start-constraint-date>2016-03-26T14:15:00.000Z</start-constraint-date>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2016-03-26T14:15:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t27">
+    <title>Menu</title>
+    <effort>403200</effort>
+    <start-constraint-date>2016-03-26T14:00:00.000Z</start-constraint-date>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2016-03-26T14:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t28">
+    <title>Login Page</title>
+    <effort>402300</effort>
+    <start-constraint-date>2016-03-30T14:15:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t23"/>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2016-03-30T14:15:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t29">
+    <title>Development</title>
+    <type>group</type>
+    <start-constraint-date>2016-01-30T15:00:00.000Z</start-constraint-date>
+    <child-task idref="t30"/>
+    <child-task idref="t31"/>
+    <child-task idref="t32"/>
+    <child-task idref="t33"/>
+    <child-task idref="t51"/>
+    <child-task idref="t52"/>
+    <child-task idref="t53"/>
+    <child-task idref="t54"/>
+    <child-task idref="t55"/>
+    <child-task idref="t57"/>
+    <child-task idref="t56"/>
+    <child-task idref="t58"/>
+    <child-task idref="t59"/>
+    <child-task idref="t60"/>
+    <child-task idref="t61"/>
+    <child-task idref="t62"/>
+    <prerequisite-task idref="t13"/>
+    <start-no-earlier-than>2016-01-30T15:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t30">
+    <title>Phase 1 Sprint</title>
+    <effort>302400</effort>
+    <start-constraint-date>2016-01-30T15:00:00.000Z</start-constraint-date>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2016-01-30T15:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t31">
+    <title>Phase 1 Testing</title>
+    <effort>51300</effort>
+    <start-constraint-date>2016-02-05T15:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t30"/>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2016-02-05T15:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t32">
+    <title>Phase 2 Sprint</title>
+    <effort>302400</effort>
+    <start-constraint-date>2016-02-06T15:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t31"/>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2016-02-06T15:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t33">
+    <title>Phase 2 Testing</title>
+    <effort>51300</effort>
+    <start-constraint-date>2016-02-12T04:45:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t32"/>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2016-02-12T04:45:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t47">
+    <title>Meeting up Liz</title>
+    <effort>26100</effort>
+    <start-constraint-date>2016-01-27T02:30:00.000Z</start-constraint-date>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2016-01-27T02:30:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t48">
+    <title>submit event + gantt</title>
+    <effort>30600</effort>
+    <start-constraint-date>2016-01-27T01:15:00.000Z</start-constraint-date>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2016-01-27T01:15:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t49">
+    <title>Create UI Mockup</title>
+    <effort>205200</effort>
+    <start-constraint-date>2016-01-26T04:30:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2016-01-26T04:30:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t51">
+    <title>Phase 3 Sprint</title>
+    <effort>302400</effort>
+    <start-constraint-date>2016-02-13T15:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t33"/>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2016-02-13T15:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t52">
+    <title>Phase 3 Testing</title>
+    <effort>50400</effort>
+    <start-constraint-date>2016-02-19T15:15:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t51"/>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2016-02-19T15:15:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t53">
+    <title>Phase 4 Sprint</title>
+    <effort>301500</effort>
+    <start-constraint-date>2016-02-20T15:15:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t52"/>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2016-02-20T15:15:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t54">
+    <title>Phase 4 Testing</title>
+    <effort>49500</effort>
+    <start-constraint-date>2016-02-26T15:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t53"/>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2016-02-26T15:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t55">
+    <title>Phase 5 Sprint</title>
+    <effort>301500</effort>
+    <start-constraint-date>2016-02-27T15:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t54"/>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2016-02-27T15:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t56">
+    <title>Phase 6 Sprint</title>
+    <effort>301500</effort>
+    <start-constraint-date>2016-03-05T15:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t57"/>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2016-03-05T15:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t57">
+    <title>Phase 5 Testing</title>
+    <effort>49500</effort>
+    <start-constraint-date>2016-03-04T15:15:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t55"/>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2016-03-04T15:15:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t58">
+    <title>Phase 6 Testing</title>
+    <effort>50400</effort>
+    <start-constraint-date>2016-03-11T15:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t56"/>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2016-03-11T15:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t59">
+    <title>Phase 7 Sprint</title>
+    <effort>300600</effort>
+    <start-constraint-date>2016-03-12T15:15:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t58"/>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2016-03-12T15:15:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t60">
+    <title>Phase 7 Testing</title>
+    <effort>49500</effort>
+    <start-constraint-date>2016-03-18T14:15:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t59"/>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2016-03-18T14:15:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t61">
+    <title>Phase 8 Sprint</title>
+    <effort>301500</effort>
+    <start-constraint-date>2016-03-19T14:15:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t60"/>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2016-03-19T14:15:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t62">
+    <title>Phase 8 Testing</title>
+    <effort>53100</effort>
+    <start-constraint-date>2016-03-25T14:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t61"/>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2016-03-25T14:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t65">
+    <title>App store submissions</title>
+    <type>group</type>
+    <start-constraint-date>2016-04-07T14:00:00.000Z</start-constraint-date>
+    <child-task idref="t74"/>
+    <child-task idref="t75"/>
+    <child-task idref="t76"/>
+    <start-no-earlier-than>2016-04-07T14:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t66">
+    <title>Cloud integration</title>
+    <type>group</type>
+    <start-constraint-date>2016-04-07T03:30:00.000Z</start-constraint-date>
+    <child-task idref="t77"/>
+    <child-task idref="t78"/>
+    <prerequisite-task idref="t29"/>
+    <start-no-earlier-than>2016-04-07T03:30:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t67">
+    <title>Final Development/Presentation</title>
+    <type>group</type>
+    <start-constraint-date>2016-04-10T14:00:00.000Z</start-constraint-date>
+    <child-task idref="t71"/>
+    <child-task idref="t72"/>
+    <child-task idref="t69"/>
+    <child-task idref="t70"/>
+    <prerequisite-task idref="t65"/>
+    <start-no-earlier-than>2016-04-10T14:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t69">
+    <title>Submit source code</title>
+    <effort>52200</effort>
+    <start-constraint-date>2016-04-13T03:45:00.000Z</start-constraint-date>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2016-04-13T03:45:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t70">
+    <title>Final Demo</title>
+    <effort>51300</effort>
+    <start-constraint-date>2016-04-15T03:30:00.000Z</start-constraint-date>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2016-04-15T03:30:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t71">
+    <title>Prepare user manual</title>
+    <effort>149400</effort>
+    <start-constraint-date>2016-04-10T14:00:00.000Z</start-constraint-date>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2016-04-10T14:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t72">
+    <title>Prepare system documents</title>
+    <effort>151200</effort>
+    <start-constraint-date>2016-04-10T14:15:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t69" kind="SF"/>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2016-04-10T14:15:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t74">
+    <title>Get Apple Developer Account</title>
+    <effort>251100</effort>
+    <start-constraint-date>2016-04-07T14:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t77"/>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2016-04-07T14:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t75">
+    <title>Get Android Developer Account</title>
+    <effort>251100</effort>
+    <start-constraint-date>2016-04-07T14:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t78"/>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2016-04-07T14:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t76">
+    <title>Submit both for approval</title>
+    <effort>200700</effort>
+    <start-constraint-date>2016-04-12T14:15:00.000Z</start-constraint-date>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2016-04-12T14:15:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t77">
+    <title>CloudKit</title>
+    <effort>101700</effort>
+    <start-constraint-date>2016-04-07T03:30:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2016-04-07T03:30:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t78">
+    <title>Google Backup</title>
+    <effort>253800</effort>
+    <start-constraint-date>2016-04-07T14:00:00.000Z</start-constraint-date>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2016-04-07T14:00:00.000Z</start-no-earlier-than>
+  </task>
+  <critical-path root="-1" enabled="false" resources="false">
+    <color r="1" g="0.5" b="0.5"/>
+  </critical-path>
+</scenario>

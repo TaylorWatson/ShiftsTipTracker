@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<changelog xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
+  <version>2.1</version>
+  <task-change-set user="Taylor" date="2016-01-15T18:18:02.831Z" timestamp="2016-01-15T18:18:02.831Z">
+    <change idref="t1" from="t-1" from-position="0">
+      <change idref="t1" attribute="title" type="string" to="Task 1"/>
+    </change>
+    <change idref="t8" to="t-1" to-position="0">
+      <change idref="t8" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t8" attribute="noEarlierThanConstraintDate" type="date" to="2016-01-15T13:00:00.000Z"/>
+      <change idref="t8" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t8" attribute="title" type="string" to="Design Phase"/>
+    </change>
+    <change idref="t9" to="t-1" to-position="1">
+      <change idref="t9" attribute="internalPrerequisitesString" type="string" to="8FS"/>
+      <change idref="t9" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t9" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t9" attribute="title" type="string" to="Deliverables"/>
+    </change>
+    <change idref="t29" to="t-1" to-position="2">
+      <change idref="t29" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t29" attribute="noEarlierThanConstraintDate" type="date" to="2016-01-15T15:00:00.000Z"/>
+      <change idref="t29" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t29" attribute="title" type="string" to="Development"/>
+    </change>
+    <change idref="t14" to="t-1" to-position="3">
+      <change idref="t14" attribute="internalPrerequisitesString" type="string" to="9FS"/>
+      <change idref="t14" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t14" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t14" attribute="title" type="string" to="Art Phase"/>
+    </change>
+    <change idref="t20" to="t8" to-position="0">
+      <change idref="t20" attribute="effort" type="real" from="28800" to="75600"/>
+      <change idref="t20" attribute="internalPrerequisitesString" type="string" to="10SF"/>
+      <change idref="t20" attribute="noEarlierThanConstraintDate" type="date" to="2016-01-15T13:00:00.000Z"/>
+      <change idref="t20" attribute="title" type="string" to="Determine Project Scope"/>
+    </change>
+    <change idref="t10" to="t8" to-position="1">
+      <change idref="t10" attribute="effort" type="real" from="28800" to="50400"/>
+      <change idref="t10" attribute="noEarlierThanConstraintDate" type="date" to="2016-01-16T22:00:00.000Z"/>
+      <change idref="t10" attribute="title" type="string" to="Setup Xarmin Environment"/>
+    </change>
+    <change idref="t13" to="t8" to-position="2">
+      <change idref="t13" attribute="effort" type="real" from="28800" to="151200"/>
+      <change idref="t13" attribute="noEarlierThanConstraintDate" type="date" to="2016-01-16T15:00:00.000Z"/>
+      <change idref="t13" attribute="title" type="string" to="Create Wireframes"/>
+    </change>
+    <change idref="t11" to="t8" to-position="3">
+      <change idref="t11" attribute="title" type="string" to="Setup StoryBoard"/>
+    </change>
+    <change idref="t15" to="t9" to-position="0">
+      <change idref="t15" attribute="effort" type="real" from="28800" to="49500"/>
+      <change idref="t15" attribute="noEarlierThanConstraintDate" type="date" to="2016-01-19T15:15:00.000Z"/>
+      <change idref="t15" attribute="title" type="string" to="First meeting with faculty director"/>
+    </change>
+    <change idref="t17" to="t9" to-position="1">
+      <change idref="t17" attribute="noEarlierThanConstraintDate" type="date" to="2016-01-19T15:00:00.000Z"/>
+      <change idref="t17" attribute="title" type="string" to="Submit Team Charter"/>
+    </change>
+    <change idref="t18" to="t9" to-position="2">
+      <change idref="t18" attribute="noEarlierThanConstraintDate" type="date" to="2016-01-19T15:00:00.000Z"/>
+      <change idref="t18" attribute="title" type="string" to="Submit Project Charter"/>
+    </change>
+    <change idref="t19" to="t9" to-position="3">
+      <change idref="t19" attribute="effort" type="real" from="28800" to="49500"/>
+      <change idref="t19" attribute="noEarlierThanConstraintDate" type="date" to="2016-01-19T00:45:00.000Z"/>
+      <change idref="t19" attribute="title" type="string" to="Finish Project Plan"/>
+    </change>
+    <change idref="t22" to="t14" to-position="0">
+      <change idref="t22" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t22" attribute="noEarlierThanConstraintDate" type="date" to="2016-01-15T15:00:00.000Z"/>
+      <change idref="t22" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t22" attribute="title" type="string" to="Create UI Elements"/>
+    </change>
+    <change idref="t23" to="t14" to-position="1">
+      <change idref="t23" attribute="noEarlierThanConstraintDate" type="date" to="2016-01-15T15:00:00.000Z"/>
+      <change idref="t23" attribute="title" type="string" to="Create Splash pages"/>
+    </change>
+    <change idref="t24" to="t14" to-position="2">
+      <change idref="t24" attribute="noEarlierThanConstraintDate" type="date" to="2016-01-15T15:00:00.000Z"/>
+      <change idref="t24" attribute="title" type="string" to="Create Logo"/>
+    </change>
+    <change idref="t26" to="t22" to-position="0">
+      <change idref="t26" attribute="noEarlierThanConstraintDate" type="date" to="2016-01-15T15:00:00.000Z"/>
+      <change idref="t26" attribute="title" type="string" to="Buttons"/>
+    </change>
+    <change idref="t27" to="t22" to-position="1">
+      <change idref="t27" attribute="noEarlierThanConstraintDate" type="date" to="2016-01-15T15:00:00.000Z"/>
+      <change idref="t27" attribute="title" type="string" to="Menu"/>
+    </change>
+    <change idref="t28" to="t22" to-position="2">
+      <change idref="t28" attribute="noEarlierThanConstraintDate" type="date" to="2016-01-15T15:00:00.000Z"/>
+      <change idref="t28" attribute="title" type="string" to="Login Page"/>
+    </change>
+    <change idref="t30" to="t29" to-position="0">
+      <change idref="t30" attribute="noEarlierThanConstraintDate" type="date" to="2016-01-15T15:00:00.000Z"/>
+      <change idref="t30" attribute="title" type="string" to="Phase 1 Sprint"/>
+    </change>
+    <change idref="t31" to="t29" to-position="1">
+      <change idref="t31" attribute="noEarlierThanConstraintDate" type="date" to="2016-01-15T15:00:00.000Z"/>
+      <change idref="t31" attribute="title" type="string" to="Phase 1 Testing"/>
+    </change>
+    <change idref="t32" to="t29" to-position="2">
+      <change idref="t32" attribute="noEarlierThanConstraintDate" type="date" to="2016-01-15T15:00:00.000Z"/>
+      <change idref="t32" attribute="title" type="string" to="Phase 2 Sprint"/>
+    </change>
+    <change idref="t33" to="t29" to-position="3">
+      <change idref="t33" attribute="noEarlierThanConstraintDate" type="date" to="2016-01-15T15:00:00.000Z"/>
+      <change idref="t33" attribute="title" type="string" to="Phase 2 Testing"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="Taylor" date="2016-01-26T14:53:12.085Z" timestamp="2016-01-26T14:53:12.085Z">
+    <change idref="t66" to="t-1" to-position="4" resolved="yes">
+      <change idref="t66" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t66" attribute="noEarlierThanConstraintDate" type="date" to="2016-04-07T03:30:00.000Z"/>
+      <change idref="t66" attribute="noLaterThanConstrainedTaskEnd" type="real" from="1" to="0"/>
+      <change idref="t66" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t66" attribute="title" type="string" to="Cloud integration"/>
+    </change>
+    <change idref="t65" to="t-1" to-position="5" resolved="yes">
+      <change idref="t65" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t65" attribute="noEarlierThanConstraintDate" type="date" to="2016-04-07T14:00:00.000Z"/>
+      <change idref="t65" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t65" attribute="title" type="string" to="App store submissions"/>
+    </change>
+    <change idref="t67" to="t-1" to-position="6" resolved="yes">
+      <change idref="t67" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t67" attribute="noEarlierThanConstraintDate" type="date" to="2016-04-10T14:00:00.000Z"/>
+      <change idref="t67" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t67" attribute="title" type="string" to="Final Development/Presentation"/>
+    </change>
+    <change idref="t47" to="t9" to-position="4" resolved="yes">
+      <change idref="t47" attribute="effort" type="real" from="28800" to="26100"/>
+      <change idref="t47" attribute="noEarlierThanConstraintDate" type="date" to="2016-01-27T02:30:00.000Z"/>
+      <change idref="t47" attribute="title" type="string" to="Meeting up Liz"/>
+    </change>
+    <change idref="t48" to="t9" to-position="5" resolved="yes">
+      <change idref="t48" attribute="effort" type="real" from="28800" to="30600"/>
+      <change idref="t48" attribute="noEarlierThanConstraintDate" type="date" to="2016-01-27T01:15:00.000Z"/>
+      <change idref="t48" attribute="title" type="string" to="submit event + gantt"/>
+    </change>
+    <change idref="t49" to="t9" to-position="6" resolved="yes">
+      <change idref="t49" attribute="effort" type="real" from="28800" to="205200"/>
+      <change idref="t49" attribute="noEarlierThanConstraintDate" type="date" to="2016-01-26T04:30:00.000Z"/>
+      <change idref="t49" attribute="title" type="string" to="Create UI Mockup"/>
+    </change>
+    <change idref="t14" attribute="noEarlierThanConstraintDate" type="date" to="2016-03-26T14:00:00.000Z" resolved="yes"/>
+    <change idref="t19" attribute="effort" type="real" from="49500" to="351000" resolved="yes"/>
+    <change idref="t28" from="t22" from-position="2" to="t22" to-position="1" resolved="yes"/>
+    <change idref="t23" attribute="effort" type="real" from="28800" to="51300" resolved="yes"/>
+    <change idref="t23" attribute="internalPrerequisitesString" type="string" to="24FS" resolved="yes"/>
+    <change idref="t24" attribute="effort" type="real" from="28800" to="151200" resolved="yes"/>
+    <change idref="t26" attribute="effort" type="real" from="28800" to="302400" resolved="yes"/>
+    <change idref="t27" attribute="effort" type="real" from="28800" to="403200" resolved="yes"/>
+    <change idref="t28" attribute="effort" type="real" from="28800" to="402300" resolved="yes"/>
+    <change idref="t28" attribute="noEarlierThanConstraintDate" type="date" from="2016-01-15T15:00:00.000Z" to="2016-03-26T14:00:00.000Z" resolved="yes"/>
+    <change idref="t28" attribute="internalPrerequisitesString" type="string" to="23FS" resolved="yes"/>
+    <change idref="t29" attribute="noEarlierThanConstraintDate" type="date" from="2016-01-15T15:00:00.000Z" to="2016-01-30T15:00:00.000Z" resolved="yes"/>
+    <change idref="t51" to="t29" to-position="4" resolved="yes">
+      <change idref="t51" attribute="effort" type="real" from="28800" to="302400"/>
+      <change idref="t51" attribute="noEarlierThanConstraintDate" type="date" to="2016-02-13T15:00:00.000Z"/>
+      <change idref="t51" attribute="title" type="string" to="Phase 3 Sprint"/>
+    </change>
+    <change idref="t52" to="t29" to-position="5" resolved="yes">
+      <change idref="t52" attribute="effort" type="real" from="28800" to="50400"/>
+      <change idref="t52" attribute="noEarlierThanConstraintDate" type="date" to="2016-02-19T15:00:00.000Z"/>
+      <change idref="t52" attribute="title" type="string" to="Phase 3 Testing"/>
+    </change>
+    <change idref="t53" to="t29" to-position="6" resolved="yes">
+      <change idref="t53" attribute="effort" type="real" from="28800" to="301500"/>
+      <change idref="t53" attribute="noEarlierThanConstraintDate" type="date" to="2016-02-20T15:15:00.000Z"/>
+      <change idref="t53" attribute="title" type="string" to="Phase 4 Sprint"/>
+    </change>
+    <change idref="t54" to="t29" to-position="7" resolved="yes">
+      <change idref="t54" attribute="effort" type="real" from="28800" to="49500"/>
+      <change idref="t54" attribute="noEarlierThanConstraintDate" type="date" to="2016-02-26T15:00:00.000Z"/>
+      <change idref="t54" attribute="title" type="string" to="Phase 4 Testing"/>
+    </change>
+    <change idref="t55" to="t29" to-position="8" resolved="yes">
+      <change idref="t55" attribute="effort" type="real" from="28800" to="301500"/>
+      <change idref="t55" attribute="noEarlierThanConstraintDate" type="date" to="2016-02-27T15:15:00.000Z"/>
+      <change idref="t55" attribute="title" type="string" to="Phase 5 Sprint"/>
+    </change>
+    <change idref="t57" to="t29" to-position="9" resolved="yes">
+      <change idref="t57" attribute="effort" type="real" from="28800" to="49500"/>
+      <change idref="t57" attribute="noEarlierThanConstraintDate" type="date" to="2016-03-04T15:15:00.000Z"/>
+      <change idref="t57" attribute="title" type="string" to="Phase 5 Testing"/>
+    </change>
+    <change idref="t56" to="t29" to-position="10" resolved="yes">
+      <change idref="t56" attribute="effort" type="real" from="28800" to="301500"/>
+      <change idref="t56" attribute="noEarlierThanConstraintDate" type="date" to="2016-03-05T15:00:00.000Z"/>
+      <change idref="t56" attribute="title" type="string" to="Phase 6 Sprint"/>
+    </change>
+    <change idref="t58" to="t29" to-position="11" resolved="yes">
+      <change idref="t58" attribute="effort" type="real" from="28800" to="50400"/>
+      <change idref="t58" attribute="noEarlierThanConstraintDate" type="date" to="2016-03-11T15:00:00.000Z"/>
+      <change idref="t58" attribute="title" type="string" to="Phase 6 Testing"/>
+    </change>
+    <change idref="t59" to="t29" to-position="12" resolved="yes">
+      <change idref="t59" attribute="effort" type="real" from="28800" to="300600"/>
+      <change idref="t59" attribute="noEarlierThanConstraintDate" type="date" to="2016-03-12T15:30:00.000Z"/>
+      <change idref="t59" attribute="title" type="string" to="Phase 7 Sprint"/>
+    </change>
+    <change idref="t60" to="t29" to-position="13" resolved="yes">
+      <change idref="t60" attribute="effort" type="real" from="28800" to="49500"/>
+      <change idref="t60" attribute="noEarlierThanConstraintDate" type="date" to="2016-03-18T14:15:00.000Z"/>
+      <change idref="t60" attribute="title" type="string" to="Phase 7 Testing"/>
+    </change>
+    <change idref="t61" to="t29" to-position="14" resolved="yes">
+      <change idref="t61" attribute="effort" type="real" from="28800" to="301500"/>
+      <change idref="t61" attribute="noEarlierThanConstraintDate" type="date" to="2016-03-19T14:15:00.000Z"/>
+      <change idref="t61" attribute="title" type="string" to="Phase 8 Sprint"/>
+    </change>
+    <change idref="t62" to="t29" to-position="15" resolved="yes">
+      <change idref="t62" attribute="effort" type="real" from="28800" to="53100"/>
+      <change idref="t62" attribute="noEarlierThanConstraintDate" type="date" to="2016-03-25T14:00:00.000Z"/>
+      <change idref="t62" attribute="title" type="string" to="Phase 8 Testing"/>
+    </change>
+    <change idref="t30" attribute="effort" type="real" from="28800" to="302400" resolved="yes"/>
+    <change idref="t31" attribute="noLaterThanConstrainedTaskEnd" type="real" from="1" to="0" resolved="yes"/>
+    <change idref="t31" attribute="effort" type="real" from="28800" to="51300" resolved="yes"/>
+    <change idref="t31" attribute="noEarlierThanConstraintDate" type="date" from="2016-01-15T15:00:00.000Z" to="2016-02-05T15:00:00.000Z" resolved="yes"/>
+    <change idref="t32" attribute="effort" type="real" from="28800" to="302400" resolved="yes"/>
+    <change idref="t32" attribute="noEarlierThanConstraintDate" type="date" from="2016-01-15T15:00:00.000Z" to="2016-02-06T15:00:00.000Z" resolved="yes"/>
+    <change idref="t33" attribute="effort" type="real" from="28800" to="51300" resolved="yes"/>
+    <change idref="t33" attribute="noEarlierThanConstraintDate" type="date" from="2016-01-15T15:00:00.000Z" to="2016-02-12T04:45:00.000Z" resolved="yes"/>
+    <change idref="t74" to="t65" to-position="0" resolved="yes">
+      <change idref="t74" attribute="effort" type="real" from="28800" to="251100"/>
+      <change idref="t74" attribute="noEarlierThanConstraintDate" type="date" to="2016-01-26T15:00:00.000Z"/>
+      <change idref="t74" attribute="title" type="string" to="Get Apple Developer Account"/>
+    </change>
+    <change idref="t75" to="t65" to-position="1" resolved="yes">
+      <change idref="t75" attribute="effort" type="real" from="28800" to="251100"/>
+      <change idref="t75" attribute="noEarlierThanConstraintDate" type="date" to="2016-01-26T15:00:00.000Z"/>
+      <change idref="t75" attribute="title" type="string" to="Get Android Developer Account"/>
+    </change>
+    <change idref="t76" to="t65" to-position="2" resolved="yes">
+      <change idref="t76" attribute="effort" type="real" from="28800" to="200700"/>
+      <change idref="t76" attribute="noEarlierThanConstraintDate" type="date" to="2016-04-12T14:15:00.000Z"/>
+      <change idref="t76" attribute="title" type="string" to="Submit both for approval"/>
+    </change>
+    <change idref="t77" to="t66" to-position="0" resolved="yes">
+      <change idref="t77" attribute="effort" type="real" from="28800" to="101700"/>
+      <change idref="t77" attribute="noEarlierThanConstraintDate" type="date" to="2016-01-26T15:00:00.000Z"/>
+      <change idref="t77" attribute="title" type="string" to="CloudKit"/>
+    </change>
+    <change idref="t78" to="t66" to-position="1" resolved="yes">
+      <change idref="t78" attribute="effort" type="real" from="28800" to="253800"/>
+      <change idref="t78" attribute="noEarlierThanConstraintDate" type="date" to="2016-04-07T14:00:00.000Z"/>
+      <change idref="t78" attribute="title" type="string" to="Google Backup"/>
+    </change>
+    <change idref="t71" to="t67" to-position="0" resolved="yes">
+      <change idref="t71" attribute="effort" type="real" from="28800" to="149400"/>
+      <change idref="t71" attribute="noEarlierThanConstraintDate" type="date" to="2016-04-10T14:00:00.000Z"/>
+      <change idref="t71" attribute="noLaterThanConstrainedTaskEnd" type="real" from="1" to="0"/>
+      <change idref="t71" attribute="title" type="string" to="Prepare user manual"/>
+    </change>
+    <change idref="t72" to="t67" to-position="1" resolved="yes">
+      <change idref="t72" attribute="effort" type="real" from="28800" to="151200"/>
+      <change idref="t72" attribute="internalPrerequisitesString" type="string" to="69SF"/>
+      <change idref="t72" attribute="noEarlierThanConstraintDate" type="date" to="2016-01-26T15:00:00.000Z"/>
+      <change idref="t72" attribute="title" type="string" to="Prepare system documents"/>
+    </change>
+    <change idref="t69" to="t67" to-position="2" resolved="yes">
+      <change idref="t69" attribute="effort" type="real" from="28800" to="52200"/>
+      <change idref="t69" attribute="noEarlierThanConstraintDate" type="date" to="2016-04-13T03:45:00.000Z"/>
+      <change idref="t69" attribute="title" type="string" to="Submit source code"/>
+    </change>
+    <change idref="t70" to="t67" to-position="3" resolved="yes">
+      <change idref="t70" attribute="effort" type="real" from="28800" to="51300"/>
+      <change idref="t70" attribute="noEarlierThanConstraintDate" type="date" to="2016-04-15T03:30:00.000Z"/>
+      <change idref="t70" attribute="title" type="string" to="Final Demo"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="Taylor" date="2016-01-26T14:58:12.706Z" timestamp="2016-01-26T14:58:12.706Z">
+    <change idref="t19" attribute="noEarlierThanConstraintDate" type="date" from="2016-01-19T00:45:00.000Z" to="2016-01-19T15:00:00.000Z" resolved="yes"/>
+    <change idref="t22" attribute="noEarlierThanConstraintDate" type="date" from="2016-01-15T15:00:00.000Z" to="2016-03-26T14:00:00.000Z" resolved="yes"/>
+    <change idref="t23" attribute="noEarlierThanConstraintDate" type="date" from="2016-01-15T15:00:00.000Z" to="2016-03-29T14:00:00.000Z" resolved="yes"/>
+    <change idref="t24" attribute="noEarlierThanConstraintDate" type="date" from="2016-01-15T15:00:00.000Z" to="2016-03-26T03:45:00.000Z" resolved="yes"/>
+    <change idref="t26" attribute="noEarlierThanConstraintDate" type="date" from="2016-01-15T15:00:00.000Z" to="2016-03-26T14:15:00.000Z" resolved="yes"/>
+    <change idref="t27" attribute="noEarlierThanConstraintDate" type="date" from="2016-01-15T15:00:00.000Z" to="2016-03-26T14:00:00.000Z" resolved="yes"/>
+    <change idref="t28" attribute="noEarlierThanConstraintDate" type="date" from="2016-03-26T14:00:00.000Z" to="2016-03-30T14:15:00.000Z" resolved="yes"/>
+    <change idref="t30" attribute="noEarlierThanConstraintDate" type="date" from="2016-01-15T15:00:00.000Z" to="2016-01-30T04:45:00.000Z" resolved="yes"/>
+    <change idref="t72" attribute="noEarlierThanConstraintDate" type="date" from="2016-01-26T15:00:00.000Z" to="2016-04-10T14:15:00.000Z" resolved="yes"/>
+    <change idref="t74" attribute="noEarlierThanConstraintDate" type="date" from="2016-01-26T15:00:00.000Z" to="2016-04-07T03:45:00.000Z" resolved="yes"/>
+    <change idref="t75" attribute="noEarlierThanConstraintDate" type="date" from="2016-01-26T15:00:00.000Z" to="2016-04-07T03:45:00.000Z" resolved="yes"/>
+    <change idref="t77" attribute="noEarlierThanConstraintDate" type="date" from="2016-01-26T15:00:00.000Z" to="2016-04-07T03:30:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Taylor" date="2016-01-27T23:25:44.795Z" timestamp="2016-01-27T23:25:44.795Z">
+    <change idref="t9" attribute="internalPrerequisitesString" type="string" from="8FS" to="8FS, 29FS"/>
+    <change idref="t10" attribute="internalAssignments" type="string" from="" to="2"/>
+    <change idref="t11" attribute="internalAssignments" type="string" from="" to="1"/>
+    <change idref="t11" attribute="internalPrerequisitesString" type="string" to="20FS"/>
+    <change idref="t11" attribute="noEarlierThanConstraintDate" type="date" to="2016-01-15T15:00:00.000Z"/>
+    <change idref="t13" attribute="internalAssignments" type="string" from="" to="1"/>
+    <change idref="t13" attribute="internalPrerequisitesString" type="string" to="11FS"/>
+    <change idref="t15" attribute="internalAssignments" type="string" from="" to="3"/>
+    <change idref="t17" attribute="internalAssignments" type="string" from="" to="2"/>
+    <change idref="t18" attribute="internalAssignments" type="string" from="" to="2"/>
+    <change idref="t19" attribute="internalAssignments" type="string" from="" to="1"/>
+    <change idref="t20" attribute="noEarlierThanConstraintDate" type="date" from="2016-01-15T13:00:00.000Z" to="2016-01-15T15:00:00.000Z"/>
+    <change idref="t20" attribute="internalAssignments" type="string" from="" to="2"/>
+    <change idref="t23" attribute="internalAssignments" type="string" from="" to="1"/>
+    <change idref="t24" attribute="noEarlierThanConstraintDate" type="date" from="2016-03-26T03:45:00.000Z" to="2016-03-26T14:00:00.000Z"/>
+    <change idref="t24" attribute="internalAssignments" type="string" from="" to="1"/>
+    <change idref="t26" attribute="internalAssignments" type="string" from="" to="3"/>
+    <change idref="t27" attribute="internalAssignments" type="string" from="" to="2"/>
+    <change idref="t28" attribute="internalAssignments" type="string" from="" to="2"/>
+    <change idref="t29" attribute="internalPrerequisitesString" type="string" to="13FS"/>
+    <change idref="t30" attribute="noEarlierThanConstraintDate" type="date" from="2016-01-30T04:45:00.000Z" to="2016-01-30T15:00:00.000Z"/>
+    <change idref="t30" attribute="internalAssignments" type="string" from="" to="3"/>
+    <change idref="t31" attribute="internalAssignments" type="string" from="" to="3"/>
+    <change idref="t31" attribute="internalPrerequisitesString" type="string" to="30FS"/>
+    <change idref="t32" attribute="internalAssignments" type="string" from="" to="3"/>
+    <change idref="t32" attribute="internalPrerequisitesString" type="string" to="31FS"/>
+    <change idref="t33" attribute="internalAssignments" type="string" from="" to="3"/>
+    <change idref="t33" attribute="internalPrerequisitesString" type="string" to="32FS"/>
+    <change idref="t47" attribute="internalAssignments" type="string" from="" to="3"/>
+    <change idref="t48" attribute="internalAssignments" type="string" from="" to="3"/>
+    <change idref="t49" attribute="internalAssignments" type="string" from="" to="1"/>
+    <change idref="t51" attribute="internalAssignments" type="string" from="" to="3"/>
+    <change idref="t51" attribute="internalPrerequisitesString" type="string" to="33FS"/>
+    <change idref="t52" attribute="noEarlierThanConstraintDate" type="date" from="2016-02-19T15:00:00.000Z" to="2016-02-19T15:15:00.000Z"/>
+    <change idref="t52" attribute="internalAssignments" type="string" from="" to="3"/>
+    <change idref="t52" attribute="internalPrerequisitesString" type="string" to="51FS"/>
+    <change idref="t53" attribute="internalAssignments" type="string" from="" to="3"/>
+    <change idref="t53" attribute="internalPrerequisitesString" type="string" to="52FS"/>
+    <change idref="t54" attribute="internalAssignments" type="string" from="" to="3"/>
+    <change idref="t54" attribute="internalPrerequisitesString" type="string" to="53FS"/>
+    <change idref="t55" attribute="noEarlierThanConstraintDate" type="date" from="2016-02-27T15:15:00.000Z" to="2016-02-27T15:00:00.000Z"/>
+    <change idref="t55" attribute="internalAssignments" type="string" from="" to="3"/>
+    <change idref="t55" attribute="internalPrerequisitesString" type="string" to="54FS"/>
+    <change idref="t56" attribute="internalAssignments" type="string" from="" to="3"/>
+    <change idref="t56" attribute="internalPrerequisitesString" type="string" to="57FS"/>
+    <change idref="t57" attribute="internalAssignments" type="string" from="" to="3"/>
+    <change idref="t57" attribute="internalPrerequisitesString" type="string" to="55FS"/>
+    <change idref="t58" attribute="internalAssignments" type="string" from="" to="3"/>
+    <change idref="t58" attribute="internalPrerequisitesString" type="string" to="56FS"/>
+    <change idref="t59" attribute="noEarlierThanConstraintDate" type="date" from="2016-03-12T15:30:00.000Z" to="2016-03-12T15:15:00.000Z"/>
+    <change idref="t59" attribute="internalAssignments" type="string" from="" to="3"/>
+    <change idref="t59" attribute="internalPrerequisitesString" type="string" to="58FS"/>
+    <change idref="t60" attribute="internalAssignments" type="string" from="" to="3"/>
+    <change idref="t60" attribute="internalPrerequisitesString" type="string" to="59FS"/>
+    <change idref="t61" attribute="internalAssignments" type="string" from="" to="3"/>
+    <change idref="t61" attribute="internalPrerequisitesString" type="string" to="60FS"/>
+    <change idref="t62" attribute="internalAssignments" type="string" from="" to="3"/>
+    <change idref="t62" attribute="internalPrerequisitesString" type="string" to="61FS"/>
+    <change idref="t66" attribute="internalPrerequisitesString" type="string" to="29FS"/>
+    <change idref="t67" attribute="internalPrerequisitesString" type="string" to="65FS"/>
+    <change idref="t69" attribute="internalAssignments" type="string" from="" to="3"/>
+    <change idref="t70" attribute="internalAssignments" type="string" from="" to="3"/>
+    <change idref="t71" attribute="internalAssignments" type="string" from="" to="3"/>
+    <change idref="t72" attribute="internalAssignments" type="string" from="" to="2"/>
+    <change idref="t74" attribute="noEarlierThanConstraintDate" type="date" from="2016-04-07T03:45:00.000Z" to="2016-04-07T14:00:00.000Z"/>
+    <change idref="t74" attribute="internalAssignments" type="string" from="" to="1"/>
+    <change idref="t74" attribute="internalPrerequisitesString" type="string" to="77FS"/>
+    <change idref="t75" attribute="noEarlierThanConstraintDate" type="date" from="2016-04-07T03:45:00.000Z" to="2016-04-07T14:00:00.000Z"/>
+    <change idref="t75" attribute="internalAssignments" type="string" from="" to="3"/>
+    <change idref="t75" attribute="internalPrerequisitesString" type="string" to="78FS"/>
+    <change idref="t76" attribute="internalAssignments" type="string" from="" to="3"/>
+    <change idref="t77" attribute="internalAssignments" type="string" from="" to="1"/>
+    <change idref="t78" attribute="internalAssignments" type="string" from="" to="2"/>
+  </task-change-set>
+  <resource-change-set user="Taylor" date="2016-01-15T18:18:02.831Z" timestamp="2016-01-15T18:18:02.831Z">
+    <change idref="r-1" attribute="standardHoursString" type="string" from="-;-;-;-;-;-;-" to="36000,86400;36000,86400;36000,86400;36000,86400;36000,86400;36000,86400;36000,86400"/>
+  </resource-change-set>
+  <resource-change-set user="Taylor" date="2016-01-27T23:25:44.795Z" timestamp="2016-01-27T23:25:44.795Z">
+    <change idref="r2" to="r-1" to-position="1">
+      <change idref="r2" attribute="name" type="string" to="Andrew"/>
+    </change>
+    <change idref="r3" to="r-1" to-position="2">
+      <change idref="r3" attribute="name" type="string" to="Both"/>
+    </change>
+    <change idref="r1" attribute="name" type="string" from="Resource 1" to="Taylor"/>
+  </resource-change-set>
+</changelog>
