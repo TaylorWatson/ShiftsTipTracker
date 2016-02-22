@@ -1,5 +1,4 @@
 ﻿using System;
-
 using Xamarin.Forms;
 
 namespace Shifts
@@ -8,18 +7,36 @@ namespace Shifts
 	{
 		public App ()
 		{
+			Label label = new Label {
+				XAlign = TextAlignment.Center,
+				Text = "Welcome to Shifts!"
+			};
+
+			Button b = new Button ();
+			b.Text = "Hello";
+			b.Clicked += OnCallHistory;
+
 			// The root page of your application
 			MainPage = new ContentPage {
 				Content = new StackLayout {
 					VerticalOptions = LayoutOptions.Center,
 					Children = {
-						new Label {
-							XAlign = TextAlignment.Center,
-							Text = "Welcome to Shifts!"
-						}
+						label,
+						b
 					}
 				}
 			};
+
+
+
+
+
+		}
+
+		void OnCallHistory(object sender, EventArgs e)
+		{
+			ContentPage cp = new AddEventPage ().getPage ();
+			MainPage = cp;
 		}
 
 		protected override void OnStart ()
