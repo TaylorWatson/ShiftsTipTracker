@@ -2,7 +2,6 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Shifts.Calendar_Overview">
 	<ContentPage.Content>
 		<StackLayout>
-			<Button x:Name="test" Text="Hello" IsEnabled="true" Clicked="OnCall" />
 		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>
