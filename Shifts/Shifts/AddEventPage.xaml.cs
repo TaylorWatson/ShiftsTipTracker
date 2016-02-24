@@ -71,7 +71,6 @@ namespace Shifts
 					shiftLocation,
 					datePicker,
 					picker,
-					switchcell,
 					boxView
 				}
 			};
