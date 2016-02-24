@@ -8,7 +8,7 @@ namespace Shifts
 	{
 		public App ()
 		{
-			MainPage = new NavigationPage(new Shifts.AddEventPage ());	
+			MainPage = new NavigationPage(new AddEventPage ());	
 		}
 
 		protected override void OnStart ()
