@@ -28,11 +28,6 @@ namespace Shifts
 				VerticalOptions = LayoutOptions.CenterAndExpand
 			};
 
-			SwitchCell switchcell = new SwitchCell {
-				Text = "hello",
-				On = true
-			};
-
 			DatePicker datePicker = new DatePicker {
 				Format = "D",
 				VerticalOptions = LayoutOptions.CenterAndExpand

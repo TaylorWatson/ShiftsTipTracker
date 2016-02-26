@@ -23,8 +23,6 @@ namespace Shifts
 				FontSize = Device.GetNamedSize (NamedSize.Medium, typeof(Button)),
 			};
 
-			//need to fix this. 
-			var myImage = new Image { Source = "Images/iPhone6Plus.png" };
 			//will use just solid BG colour for now.
 			BackgroundColor = Color.FromHex("#00C4DB");
 
