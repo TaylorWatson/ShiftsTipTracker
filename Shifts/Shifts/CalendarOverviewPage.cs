@@ -24,7 +24,7 @@ namespace Shifts
 		{
 
 			_relativeLayout = new RelativeLayout() {
-				HorizontalOptions = LayoutOptions.FillAndExpand,
+				HorizontalOptions = LayoutOptions.CenterAndExpand,
 				VerticalOptions = LayoutOptions.FillAndExpand
 			};
 			Content = _relativeLayout;
