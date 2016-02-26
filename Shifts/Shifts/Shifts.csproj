@@ -41,6 +41,13 @@
     <Compile Include="AddShiftPage.xaml.cs">
       <DependentUpon>AddShiftPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SetupPage1.cs" />
+    <Compile Include="SetupPage2.cs" />
+    <Compile Include="SetupPage3.cs" />
+    <Compile Include="SetupPageCarousel.cs" />
+    <Compile Include="SetupPage4.cs" />
+    <Compile Include="SetupPage5.cs" />
+    <Compile Include="SetupPage6.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.0.1.6505\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.0.1.6505\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
@@ -63,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Images\iPhone6Plus.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Calendar_Overview.xaml">
@@ -74,5 +82,8 @@
     <EmbeddedResource Include="AddShiftPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
   </ItemGroup>
 </Project>

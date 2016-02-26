@@ -8,7 +8,7 @@ namespace Shifts
 	{
 		public App ()
 		{
-			MainPage = new NavigationPage(new AddEventPage ());	
+			MainPage = new SetupPageCarousel ();	
 		}
 
 		protected override void OnStart ()
