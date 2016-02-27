@@ -12,13 +12,18 @@ namespace Shifts
 		public App ()
 		{
 			try {
+				
 				string app_status = (string)Properties ["app_status"];
 				if (app_status == INTRO_FINISHED) {
 					MainPage = new CalendarOverviewPage ();
 				}
+
 			} catch (KeyNotFoundException KnfE) {
+
+				String s = KnfE.Message; // Just to suppress 'KnfE never used' error message.
 				MainPage = new SetupPageCarousel ();
 				SetupPage6.Finished += IntroFinished;
+
 			}
 				
 		}
@@ -27,22 +32,22 @@ namespace Shifts
 		{
 			MainPage = new CalendarOverviewPage ();
 			SetupPage6.Finished -= IntroFinished;
-			Properties ["app_status"] = "finished";
+			Properties ["app_status"] = INTRO_FINISHED;
 		}
 
 		protected override void OnStart ()
 		{
-			// Handle when your app starts
+			Debug.WriteLine ("OnStart");
 		}
 
 		protected override void OnSleep ()
 		{
-			// Handle when your app sleeps
+			Debug.WriteLine ("OnSleep");
 		}
 
 		protected override void OnResume ()
 		{
-			// Handle when your app resumes
+			Debug.WriteLine ("OnResume");
 		}
 	}
 }

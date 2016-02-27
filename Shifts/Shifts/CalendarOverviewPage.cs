@@ -1,6 +1,8 @@
 ﻿using System;
 using Xamarin.Forms;
 using XLabs.Forms.Controls;
+using XLabs.Ioc;
+using XLabs.Platform.Device;
 
 namespace Shifts
 {
@@ -22,14 +24,19 @@ namespace Shifts
 
 		public CalendarOverviewPage ()
 		{
+			Padding = new OnPlatform<Thickness> {
+				iOS = new Thickness (0, 20, 0, 0)
+			};
 
 			_relativeLayout = new RelativeLayout() {
 				HorizontalOptions = LayoutOptions.CenterAndExpand,
 				VerticalOptions = LayoutOptions.FillAndExpand
 			};
+
 			Content = _relativeLayout;
 
 			_calendarView = new CalendarView() {
+				
 				//BackgroundColor = Color.Blue
 				MinDate = CalendarView.FirstDayOfMonth(DateTime.Now),
 				MaxDate = CalendarView.LastDayOfMonth(DateTime.Now.AddMonths(3)),
@@ -39,8 +46,10 @@ namespace Shifts
 				TodayBackgroundStyle = CalendarView.BackgroundStyle.CircleOutline,
 				HighlightedDaysOfWeek = new DayOfWeek[]{DayOfWeek.Saturday,DayOfWeek.Sunday},
 				ShowNavigationArrows = true,
-				MonthTitleFont = Font.OfSize("Open 24 Display St",NamedSize.Medium)
-
+				MonthTitleFont = Font.OfSize("Open 24 Display St",NamedSize.Medium),
+				VerticalOptions = LayoutOptions.Center,
+				HorizontalOptions = LayoutOptions.CenterAndExpand
+					
 			};
 
 			_relativeLayout.Children.Add(_calendarView,
@@ -51,7 +60,7 @@ namespace Shifts
 
 			_stacker = new StackLayout() {
 				HorizontalOptions = LayoutOptions.FillAndExpand,
-				VerticalOptions = LayoutOptions.StartAndExpand
+				VerticalOptions = LayoutOptions.Start
 			};
 			_relativeLayout.Children.Add(_stacker,
 				Constraint.Constant(0),
