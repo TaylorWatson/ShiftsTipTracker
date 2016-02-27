@@ -6,6 +6,7 @@ namespace Shifts
 {
 	public class SetupPageCarousel : CarouselPage
 	{
+
 		public SetupPageCarousel ()
 		{
 			this.Children.Add (new SetupPage1 ());
@@ -15,6 +16,8 @@ namespace Shifts
 			this.Children.Add (new SetupPage5 ());
 			this.Children.Add (new SetupPage6 ());
 		}
+
+
 	}
 }
 

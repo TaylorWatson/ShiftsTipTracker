@@ -38,14 +38,22 @@
     <Compile Include="AddShiftPage.xaml.cs">
       <DependentUpon>AddShiftPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SetupPage1.cs" />
-    <Compile Include="SetupPage2.cs" />
-    <Compile Include="SetupPage3.cs" />
     <Compile Include="SetupPageCarousel.cs" />
-    <Compile Include="SetupPage4.cs" />
-    <Compile Include="SetupPage5.cs" />
-    <Compile Include="SetupPage6.cs" />
     <Compile Include="CalendarOverviewPage.cs" />
+    <Compile Include="ISQLite.cs" />
+    <Compile Include="PaymentOptions.cs" />
+    <Compile Include="Tables\Delivery.cs" />
+    <Compile Include="Tables\Shift.cs" />
+    <Compile Include="Tables\Setting.cs" />
+    <Compile Include="Tables\States.cs" />
+    <Compile Include="Tables\Country.cs" />
+    <Compile Include="SetupPages\SetupPage1.cs" />
+    <Compile Include="SetupPages\SetupPage2.cs" />
+    <Compile Include="SetupPages\SetupPage3.cs" />
+    <Compile Include="SetupPages\SetupPage4.cs" />
+    <Compile Include="SetupPages\SetupPage5.cs" />
+    <Compile Include="SetupPages\SetupPage6.cs" />
+    <Compile Include="ShiftsDatabase.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.0.1.6505\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.0.1.6505\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
@@ -98,5 +106,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\" />
+    <Folder Include="Tables\" />
+    <Folder Include="SetupPages\" />
   </ItemGroup>
 </Project>

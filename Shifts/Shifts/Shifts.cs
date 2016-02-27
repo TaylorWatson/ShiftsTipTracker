@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace Shifts
 {
@@ -8,7 +9,14 @@ namespace Shifts
 	{
 		public App ()
 		{
-			MainPage = new SetupPageCarousel ();	
+			MainPage = new SetupPageCarousel ();
+
+			SetupPage6.Finished += IntroFinished;
+		}
+
+		private void IntroFinished (object sender, EventArgs e)
+		{
+			Debug.WriteLine ("Finished!");
 		}
 
 		protected override void OnStart ()

@@ -1,13 +1,16 @@
 ﻿using System;
-
+using System.Runtime.Serialization;
 using Xamarin.Forms;
 
-namespace Shifts
+namespace Shifts	
 {
+
 	public class SetupPage6 : ContentPage
 	{
+		public static event EventHandler Finished;
 		public SetupPage6 ()
 		{
+			
 			var header = new Label () {
 				Text = "Let's get started",
 				FontSize = Device.GetNamedSize (NamedSize.Large, typeof(Label)),
@@ -23,6 +26,12 @@ namespace Shifts
 				FontSize = Device.GetNamedSize (NamedSize.Medium, typeof(Button)),
 			};
 
+			button.Clicked += (object sender, EventArgs e) => {
+				if (Finished != null) {
+					Finished(sender, e);
+				}
+			};
+			
 			//will use just solid BG colour for now.
 			BackgroundColor = Color.FromHex("#00C4DB");
 
