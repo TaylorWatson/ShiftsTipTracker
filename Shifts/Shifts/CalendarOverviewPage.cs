@@ -1,5 +1,4 @@
-﻿using Syncfusion.SfCalendar.XForms;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,8 +21,6 @@ namespace Shifts
 			calendar.ShowAppointmentsInline = false;
 
 			DateTime currentDate = DateTime.Now;
-			DateTime startTime = new DateTime(currentDate.Year, currentDate.Month, currentDate.Day, 10, 0, 0);
-			DateTime endTime = new DateTime(currentDate.Year, currentDate.Month, currentDate.Day, 12, 0, 0);
 
 			calendar.HorizontalOptions = LayoutOptions.FillAndExpand;
 			calendar.HeightRequest = 400;
