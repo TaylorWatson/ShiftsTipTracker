@@ -32,12 +32,6 @@
   <ItemGroup>
     <Compile Include="Shifts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="AddEventPage.xaml.cs">
-      <DependentUpon>AddEventPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="AddShiftPage.xaml.cs">
-      <DependentUpon>AddShiftPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="SetupPageCarousel.cs" />
     <Compile Include="CalendarOverviewPage.cs" />
     <Compile Include="ISQLite.cs" />
@@ -107,14 +101,6 @@
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="Images\iPhone6Plus.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="AddEventPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AddShiftPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\" />
