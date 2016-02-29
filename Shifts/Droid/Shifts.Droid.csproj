@@ -97,6 +97,42 @@
     <Reference Include="XLabs.Forms">
       <HintPath>..\packages\XLabs.Forms.2.0.5782\lib\MonoAndroid\XLabs.Forms.dll</HintPath>
     </Reference>
+    <Reference Include="Syncfusion.SfCalendar.Android">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfCalendar.13.4.0.58\lib\MonoAndroid10\Syncfusion.SfCalendar.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfCalendar.XForms.Android">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfCalendar.13.4.0.58\lib\MonoAndroid10\Syncfusion.SfCalendar.XForms.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfCalendar.XForms">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfCalendar.13.4.0.58\lib\MonoAndroid10\Syncfusion.SfCalendar.XForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfChart.Android">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfChart.13.4.0.58\lib\MonoAndroid10\Syncfusion.SfChart.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfChart.XForms.Android">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfChart.13.4.0.58\lib\MonoAndroid10\Syncfusion.SfChart.XForms.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfChart.XForms">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfChart.13.4.0.58\lib\MonoAndroid10\Syncfusion.SfChart.XForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfNumericTextBox.Android">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfNumericTextBox.13.4.0.58\lib\MonoAndroid10\Syncfusion.SfNumericTextBox.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfNumericTextBox.XForms.Android">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfNumericTextBox.13.4.0.58\lib\MonoAndroid10\Syncfusion.SfNumericTextBox.XForms.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfNumericTextBox.XForms">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfNumericTextBox.13.4.0.58\lib\MonoAndroid10\Syncfusion.SfNumericTextBox.XForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfSchedule.Android">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfSchedule.13.4.0.58\lib\MonoAndroid10\Syncfusion.SfSchedule.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfSchedule.XForms.Android">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfSchedule.13.4.0.58\lib\MonoAndroid10\Syncfusion.SfSchedule.XForms.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfSchedule.XForms">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfSchedule.13.4.0.58\lib\MonoAndroid10\Syncfusion.SfSchedule.XForms.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Shifts\Shifts.csproj">

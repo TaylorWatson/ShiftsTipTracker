@@ -115,6 +115,42 @@
     <Reference Include="XLabs.Forms">
       <HintPath>..\packages\XLabs.Forms.2.0.5782\lib\Xamarin.iOS10\XLabs.Forms.dll</HintPath>
     </Reference>
+    <Reference Include="Syncfusion.SfNumericTextBox.iOS">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfNumericTextBox.13.4.0.58\lib\Xamarin.iOS10\Syncfusion.SfNumericTextBox.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfNumericTextBox.XForms">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfNumericTextBox.13.4.0.58\lib\Xamarin.iOS10\Syncfusion.SfNumericTextBox.XForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfNumericTextBox.XForms.iOS">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfNumericTextBox.13.4.0.58\lib\Xamarin.iOS10\Syncfusion.SfNumericTextBox.XForms.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfChart.iOS">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfChart.13.4.0.58\lib\Xamarin.iOS10\Syncfusion.SfChart.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfChart.XForms">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfChart.13.4.0.58\lib\Xamarin.iOS10\Syncfusion.SfChart.XForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfChart.XForms.iOS">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfChart.13.4.0.58\lib\Xamarin.iOS10\Syncfusion.SfChart.XForms.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfCalendar.iOS">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfCalendar.13.4.0.58\lib\Xamarin.iOS10\Syncfusion.SfCalendar.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfCalendar.XForms">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfCalendar.13.4.0.58\lib\Xamarin.iOS10\Syncfusion.SfCalendar.XForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfCalendar.XForms.iOS">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfCalendar.13.4.0.58\lib\Xamarin.iOS10\Syncfusion.SfCalendar.XForms.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfSchedule.iOS">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfSchedule.13.4.0.58\lib\Xamarin.iOS10\Syncfusion.SfSchedule.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfSchedule.XForms">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfSchedule.13.4.0.58\lib\Xamarin.iOS10\Syncfusion.SfSchedule.XForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfSchedule.XForms.iOS">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfSchedule.13.4.0.58\lib\Xamarin.iOS10\Syncfusion.SfSchedule.XForms.iOS.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Shifts\Shifts.csproj">

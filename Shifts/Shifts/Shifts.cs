@@ -15,7 +15,7 @@ namespace Shifts
 				
 				string app_status = (string)Properties ["app_status"];
 				if (app_status == INTRO_FINISHED) {
-					MainPage = new CalendarOverviewPage ();
+					MainPage = new NavigationPage(new CalendarOverviewPage ());
 				}
 
 			} catch (KeyNotFoundException KnfE) {
@@ -30,7 +30,7 @@ namespace Shifts
 
 		private void IntroFinished (object sender, EventArgs e)
 		{
-			MainPage = new CalendarOverviewPage ();
+			MainPage = new NavigationPage(new CalendarOverviewPage ());
 			SetupPage6.Finished -= IntroFinished;
 			Properties ["app_status"] = INTRO_FINISHED;
 		}
