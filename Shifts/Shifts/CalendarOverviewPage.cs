@@ -42,14 +42,13 @@ namespace Shifts
 			calendar.HeightRequest = 400;
 
 			ScheduleAppointmentCollection shiftCollection = new ScheduleAppointmentCollection ();
-			ScheduleAppointment shiftEntry = new ScheduleAppointment ();
 
 			try {
 				SQLiteConnection db = (SQLiteConnection) DependencyService.Get<ISQLite> ().GetConnection ();
 				IEnumerable<Shift> shifts = db.Query<Shift>("SELECT * FROM [Shift]");
 				foreach (Shift s in shifts) 
 				{
-
+					ScheduleAppointment shiftEntry = new ScheduleAppointment ();
 					shiftEntry.StartTime = s.startTime.DateTime;
 					shiftEntry.EndTime = s.endTime.DateTime;
 					shiftEntry.Color = Color.Red;

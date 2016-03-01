@@ -21,7 +21,7 @@ namespace Shifts.iOS
 			string libraryPath = Path.Combine (documentsPath, "..", "Library"); // Library folder
 			var path = Path.Combine(libraryPath, sqliteFilename);
 			// Create the connection
-			var conn = new SQLite.SQLiteConnection(path);
+			var conn = new SQLiteConnection(path);
 			// Return the database connection
 			return conn;
 		}
