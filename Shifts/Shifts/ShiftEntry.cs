@@ -2,6 +2,8 @@
 
 using Xamarin.Forms;
 using System.Diagnostics;
+using SQLite;
+using System.Collections.Generic;
 
 namespace Shifts
 {
@@ -34,10 +36,14 @@ namespace Shifts
 					save
 				}
 			};
+
 		}
 
 		async private void Save_Clicked (object sender, EventArgs e)
 		{
+			SQLiteConnection db = DependencyService.Get<ISQLite> ().GetConnection ();
+			IEnumerable<Shift> shifts = db.Query<Shift> ("SELECT * FROM [Shift];");
+
 			await Navigation.PopAsync ();
 		}
 
