@@ -25,8 +25,8 @@ namespace Shifts
 			} catch (KeyNotFoundException KnfE) {
 
 				String s = KnfE.Message; // Just to suppress 'KnfE never used' error message.
-				//MainPage = new SetupPageCarousel ();
-				MainPage = new NavigationPage(new CalendarOverviewPage ());
+				MainPage = new SetupPageCarousel ();
+//				MainPage = new NavigationPage(new CalendarOverviewPage ());
 				SetupPage6.Finished += IntroFinished;
 
 			}
