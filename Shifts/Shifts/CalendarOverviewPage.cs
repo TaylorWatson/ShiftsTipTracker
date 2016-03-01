@@ -17,10 +17,15 @@ namespace Shifts
 			Title = "Overview";
 
 			var btnAdd = new ToolbarItem {
-				Text = "Add",
+				Text = "Add Shift",
 
 			};
-			btnAdd.Clicked += async (object sender, EventArgs e) => Navigation.PushAsync(new ShiftEntry());
+
+			btnAdd.Clicked += (object sender, System.EventArgs e) => 
+			{
+				Navigation.PushAsync(new ShiftEntry());
+			};
+
 			this.ToolbarItems.Add (btnAdd);
 
 
