@@ -194,6 +194,8 @@
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-512.png" />
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-512%402x.png" />
     <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-57.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-114.png" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />

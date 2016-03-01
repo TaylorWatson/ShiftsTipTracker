@@ -20,7 +20,7 @@ namespace Shifts
 			};
 
 			var button = new Button () {
-				Text = "Add Permissions",
+				Text = "Setup Permissions",
 				TextColor = Color.White,
 				BorderColor = Color.White,
 				FontSize = Device.GetNamedSize (NamedSize.Medium, typeof(Button)),
@@ -33,7 +33,7 @@ namespace Shifts
 			};
 			
 			//will use just solid BG colour for now.
-			BackgroundColor = Color.FromHex("#00C4DB");
+			BackgroundColor = Color.FromHex("#f4890c");
 
 
 			Content = new StackLayout {
