@@ -193,6 +193,7 @@
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-98%403x.png" />
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-512.png" />
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-512%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Contents.json" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
@@ -211,14 +212,12 @@
   <ItemGroup>
     <Folder Include="Resources\SetupImages\" />
     <Folder Include="Resources\AppIcons\" />
+    <Folder Include="Resources\Logo\" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\SetupImages\chart%402x.png" />
     <BundleResource Include="Resources\SetupImages\chart%403x.png" />
     <BundleResource Include="Resources\SetupImages\chart.png" />
-    <BundleResource Include="Resources\Logo\logo%402x.png" />
-    <BundleResource Include="Resources\Logo\logo%403x.png" />
-    <BundleResource Include="Resources\Logo\logo.png" />
     <BundleResource Include="Resources\plus.png" />
     <BundleResource Include="Resources\AppIcons\logo%402x.png" />
     <BundleResource Include="Resources\AppIcons\logo%403x.png" />

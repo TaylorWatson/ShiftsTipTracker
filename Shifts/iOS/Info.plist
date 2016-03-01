@@ -35,5 +35,7 @@
 	<string>LaunchScreen</string>
 	<key>UIStatusBarHidden</key>
 	<true/>
+	<key>XSLaunchImageAssets</key>
+	<string>Resources/Images.xcassets/LaunchImage.launchimage</string>
 </dict>
 </plist>
