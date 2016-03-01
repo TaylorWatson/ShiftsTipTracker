@@ -10,9 +10,11 @@ namespace Shifts
 	public class ShiftEntry : ContentPage
 	{
 		public Shift shift;
+		public CalendarOverviewPage parent;
 
-		public ShiftEntry ()
+		public ShiftEntry (CalendarOverviewPage cop)
 		{
+			parent = cop;
 			shift = new Shift ();
 			DatePicker startDate = new DatePicker(); startDate.DateSelected += StartDate_DateSelected;
 			DatePicker endDate = new DatePicker (); endDate.DateSelected += EndDate_DateSelected;
@@ -45,6 +47,8 @@ namespace Shifts
 
 			SQLiteConnection db = (SQLiteConnection) DependencyService.Get<ISQLite> ().GetConnection ();
 			int result = db.Insert (shift);
+
+			parent.UpdateCalendar ();
 
 			await Navigation.PopAsync ();
 		}
