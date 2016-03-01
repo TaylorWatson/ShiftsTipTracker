@@ -2,6 +2,7 @@
 using Xamarin.Forms;
 using System.Collections.Generic;
 using System.Diagnostics;
+using SQLite;
 
 namespace Shifts
 {
@@ -13,6 +14,7 @@ namespace Shifts
 
 		public App ()
 		{
+			SetupDatabase ();
 			try {
 				
 				string app_status = (string)Properties ["app_status"];
@@ -36,6 +38,22 @@ namespace Shifts
 			MainPage = new NavigationPage(new CalendarOverviewPage ());
 			SetupPage6.Finished -= IntroFinished;
 			Properties ["app_status"] = INTRO_FINISHED;
+					
+		}
+
+		private void SetupDatabase() 
+		{
+
+			SQLiteConnection db = DependencyService.Get<ISQLite> ().GetConnection ();
+			try {
+				if (db.Table<Shift> ().Count () != 0) {
+					db.CreateTable<Shift> ();
+				}
+			}
+			catch (Exception e) {
+				db.CreateTable<Shift> ();
+			}
+
 		}
 
 		protected override void OnStart ()
@@ -51,24 +69,6 @@ namespace Shifts
 		protected override void OnResume ()
 		{
 			Debug.WriteLine ("OnResume");
-		}
-
-		public static String GetConnectionString() {
-			var sqliteFilename = "TodoSQLite.db3";
-			#if __IOS__
-			string documentsPath = Environment.GetFolderPath (Environment.SpecialFolder.Personal); // Documents folder
-			string libraryPath = Path.Combine (documentsPath, "..", "Library"); // Library folder
-			var path = Path.Combine(libraryPath, sqliteFilename);
-			#else
-			#if __ANDROID__
-			string documentsPath = Environment.GetFolderPath (Environment.SpecialFolder.Personal); // Documents folder
-			var path = Path.Combine(documentsPath, sqliteFilename);
-			#else
-			// WinPhone
-			var path = "chicken";
-			#endif
-			#endif
-			return path;
 		}
 
 	}
