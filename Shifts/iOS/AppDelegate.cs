@@ -14,6 +14,9 @@ namespace Shifts.iOS
 	{
 		public override bool FinishedLaunching (UIApplication app, NSDictionary options)
 		{
+			//changes all UISwitch controls in the app, makes it ORANGE!
+			UISwitch.Appearance.OnTintColor = UIColor.FromRGB(red:0.957, green:0.537, blue:0.047);
+
 			global::Xamarin.Forms.Forms.Init ();
 
 			new SfCalendarRenderer (); 
