@@ -16,9 +16,14 @@ namespace Shifts
 		{
 			Title = "Overview";
 
-			ToolbarItems.Add (new ToolbarItem ("Add", "plus.png", async () => {
-				await Navigation.PushAsync(new ShiftEntry());
-			}));
+			var btnAdd = new ToolbarItem {
+				Text = "Add",
+
+			};
+			btnAdd.Clicked += async (object sender, EventArgs e) => Navigation.PushAsync(new ShiftEntry());
+			this.ToolbarItems.Add (btnAdd);
+
+
 			//add layout type
 			StackLayout layout = new StackLayout ();
 
