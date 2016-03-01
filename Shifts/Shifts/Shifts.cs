@@ -9,6 +9,8 @@ namespace Shifts
 	{
 		public const string INTRO_FINISHED = "finished";
 
+
+
 		public App ()
 		{
 			try {

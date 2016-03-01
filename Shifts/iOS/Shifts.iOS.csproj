@@ -215,5 +215,6 @@
     <BundleResource Include="Resources\Logo\logo%402x.png" />
     <BundleResource Include="Resources\Logo\logo%403x.png" />
     <BundleResource Include="Resources\Logo\logo.png" />
+    <BundleResource Include="Resources\plus.png" />
   </ItemGroup>
 </Project>

@@ -4883,8 +4883,8 @@ namespace Shifts.Droid
 			// aapt resource value: 0x7f020043
 			public const int design_snackbar_background = 2130837571;
 			
-			// aapt resource value: 0x7f02006b
-			public const int focused = 2130837611;
+			// aapt resource value: 0x7f02006c
+			public const int focused = 2130837612;
 			
 			// aapt resource value: 0x7f020044
 			public const int ic_cast_dark = 2130837572;
@@ -5000,11 +5000,14 @@ namespace Shifts.Droid
 			// aapt resource value: 0x7f020069
 			public const int mr_ic_settings_light = 2130837609;
 			
-			// aapt resource value: 0x7f02006a
-			public const int notification_template_icon_bg = 2130837610;
+			// aapt resource value: 0x7f02006b
+			public const int notification_template_icon_bg = 2130837611;
 			
-			// aapt resource value: 0x7f02006c
-			public const int selected = 2130837612;
+			// aapt resource value: 0x7f02006a
+			public const int plus = 2130837610;
+			
+			// aapt resource value: 0x7f02006d
+			public const int selected = 2130837613;
 			
 			static Drawable()
 			{
