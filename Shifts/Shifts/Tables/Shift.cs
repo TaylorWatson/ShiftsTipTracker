@@ -8,6 +8,8 @@ namespace Shifts
 	{
 		[PrimaryKey, AutoIncrement]
 		public int shiftId { get; set; }
+		public string shiftTitle { get; set; }
+		public string shiftLocation { get; set; }
 
 		public DateTimeOffset startTime { get; set; }
 		public DateTimeOffset endTime { get; set; }

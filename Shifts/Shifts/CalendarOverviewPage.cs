@@ -17,9 +17,7 @@ namespace Shifts
 			Title = "Overview";
 
 			ToolbarItems.Add (new ToolbarItem ("Add", "plus.png", async () => {
-				var page = new ContentPage();
-				var result = await page.DisplayAlert("Title", "Message", "Accept", "Cancel");
-				Debug.WriteLine("Success: {0}", result);
+				await Navigation.PushAsync(new ShiftEntry());
 			}));
 			//add layout type
 			StackLayout layout = new StackLayout ();
