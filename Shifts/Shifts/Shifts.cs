@@ -2,6 +2,7 @@
 using Xamarin.Forms;
 using System.Collections.Generic;
 using System.Diagnostics;
+using SQLite;
 
 namespace Shifts
 {
@@ -13,6 +14,7 @@ namespace Shifts
 
 		public App ()
 		{
+			SetupDatabase ();
 			try {
 				
 				string app_status = (string)Properties ["app_status"];
@@ -36,6 +38,22 @@ namespace Shifts
 			MainPage = new NavigationPage(new CalendarOverviewPage ());
 			SetupPage6.Finished -= IntroFinished;
 			Properties ["app_status"] = INTRO_FINISHED;
+					
+		}
+
+		private void SetupDatabase() 
+		{
+
+			SQLiteConnection db = DependencyService.Get<ISQLite> ().GetConnection ();
+			try {
+				if (db.Table<Shift> ().Count () != 0) {
+					db.CreateTable<Shift> ();
+				}
+			}
+			catch (Exception e) {
+				db.CreateTable<Shift> ();
+			}
+
 		}
 
 		protected override void OnStart ()

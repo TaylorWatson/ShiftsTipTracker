@@ -44,17 +44,24 @@ namespace Shifts
 			ScheduleAppointmentCollection shiftCollection = new ScheduleAppointmentCollection ();
 			ScheduleAppointment shiftEntry = new ScheduleAppointment ();
 
-//			foreach (Shift s in shifts) 
-//			{
-//				
-//				shiftEntry.StartTime = s.startTime.DateTime;
-//				shiftEntry.EndTime = s.endTime.DateTime;
-//				shiftEntry.Color = Color.Red;
-//				shiftEntry.Subject = s.shiftTitle;
-//				shiftEntry.Location = s.shiftLocation;
-//				shiftCollection.Add (shiftEntry);
-//
-//			}
+			try {
+				SQLiteConnection db = (SQLiteConnection) DependencyService.Get<ISQLite> ().GetConnection ();
+				IEnumerable<Shift> shifts = db.Query<Shift>("SELECT * FROM [Shift]");
+				foreach (Shift s in shifts) 
+				{
+
+					shiftEntry.StartTime = s.startTime.DateTime;
+					shiftEntry.EndTime = s.endTime.DateTime;
+					shiftEntry.Color = Color.Red;
+					shiftEntry.Subject = s.shiftTitle;
+					shiftEntry.Location = s.shiftLocation;
+					shiftCollection.Add (shiftEntry);
+
+				}
+			} catch (Exception e) {
+				
+			}
+
 			calendar.DataSource = shiftCollection;
 
 			layout.Children.Add (calendar);
