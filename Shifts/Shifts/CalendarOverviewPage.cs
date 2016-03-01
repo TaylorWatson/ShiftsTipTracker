@@ -16,9 +16,6 @@ namespace Shifts
 
 		public CalendarOverviewPage ()
 		{
-
-			SQLiteConnection db = DependencyService.Get<ISQLite> ().GetConnection ();
-			IEnumerable<Shift> shifts = db.Query<Shift> ("SELECT * FROM [Shift];");
 			Title = "Overview";
 
 			var btnAdd = new ToolbarItem {
@@ -38,7 +35,7 @@ namespace Shifts
 			SfSchedule calendar = new SfSchedule ();
 			calendar.ScheduleView = ScheduleView.MonthView;
 			calendar.ShowAppointmentsInline = true;
-			calendar.DataSource = shifts;
+//			calendar.DataSource = shifts;
 			DateTime currentDate = DateTime.Now;
 
 			calendar.HorizontalOptions = LayoutOptions.FillAndExpand;
@@ -47,17 +44,17 @@ namespace Shifts
 			ScheduleAppointmentCollection shiftCollection = new ScheduleAppointmentCollection ();
 			ScheduleAppointment shiftEntry = new ScheduleAppointment ();
 
-			foreach (Shift s in shifts) 
-			{
-				
-				shiftEntry.StartTime = s.startTime.DateTime;
-				shiftEntry.EndTime = s.endTime.DateTime;
-				shiftEntry.Color = Color.Red;
-				shiftEntry.Subject = s.shiftTitle;
-				shiftEntry.Location = s.shiftLocation;
-				shiftCollection.Add (shiftEntry);
-
-			}
+//			foreach (Shift s in shifts) 
+//			{
+//				
+//				shiftEntry.StartTime = s.startTime.DateTime;
+//				shiftEntry.EndTime = s.endTime.DateTime;
+//				shiftEntry.Color = Color.Red;
+//				shiftEntry.Subject = s.shiftTitle;
+//				shiftEntry.Location = s.shiftLocation;
+//				shiftCollection.Add (shiftEntry);
+//
+//			}
 			calendar.DataSource = shiftCollection;
 
 			layout.Children.Add (calendar);

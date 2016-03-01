@@ -41,8 +41,10 @@ namespace Shifts
 
 		async private void Save_Clicked (object sender, EventArgs e)
 		{
-			SQLiteConnection db = DependencyService.Get<ISQLite> ().GetConnection ();
-			IEnumerable<Shift> shifts = db.Query<Shift> ("SELECT * FROM [Shift];");
+
+
+			SQLiteConnection db = (SQLiteConnection) DependencyService.Get<ISQLite> ().GetConnection ();
+			int result = db.Insert (shift);
 
 			await Navigation.PopAsync ();
 		}

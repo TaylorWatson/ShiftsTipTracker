@@ -1,11 +1,12 @@
 ﻿using System;
-using System.Runtime.CompilerServices;
 using SQLite;
 using System.IO;
+using Shifts.iOS;
+using Xamarin.Forms;
 
+[assembly: Dependency (typeof (SQLite_iOS))]
 namespace Shifts.iOS
 {
-	[assembly: Dependency (typeof (SQLite_iOS))]
 	public class SQLite_iOS : ISQLite
 	{
 		public SQLite_iOS ()
