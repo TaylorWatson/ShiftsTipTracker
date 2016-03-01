@@ -17,7 +17,7 @@ namespace Shifts
 			};
 					
 			//will use just solid BG colour for now.
-			BackgroundColor = Color.FromHex("#00C4DB");
+			BackgroundColor = Color.FromHex("#f4890c");
 
 			//set for all iphone display sizes.
 			var chart = new Image { Aspect = Aspect.AspectFit };
