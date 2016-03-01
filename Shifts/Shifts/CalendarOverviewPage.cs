@@ -12,7 +12,7 @@ namespace Shifts
 {
 	public class CalendarOverviewPage : ContentPage
 	{
-		
+		public SfSchedule calendar;
 
 		public CalendarOverviewPage ()
 		{
@@ -24,7 +24,7 @@ namespace Shifts
 
 			btnAdd.Clicked += (object sender, System.EventArgs e) => 
 			{
-				Navigation.PushAsync(new ShiftEntry());
+				Navigation.PushAsync(new ShiftEntry(this));
 			};
 
 			this.ToolbarItems.Add (btnAdd);
@@ -32,14 +32,25 @@ namespace Shifts
 			//add layout type
 			StackLayout layout = new StackLayout ();
 
-			SfSchedule calendar = new SfSchedule ();
+			calendar = new SfSchedule ();
 			calendar.ScheduleView = ScheduleView.MonthView;
 			calendar.ShowAppointmentsInline = true;
 //			calendar.DataSource = shifts;
 			DateTime currentDate = DateTime.Now;
 
+			UpdateCalendar ();
+
 			calendar.HorizontalOptions = LayoutOptions.FillAndExpand;
 			calendar.HeightRequest = 400;
+
+			layout.Children.Add (calendar);
+
+			Content = layout;
+
+		}
+
+		public void UpdateCalendar() {
+
 
 			ScheduleAppointmentCollection shiftCollection = new ScheduleAppointmentCollection ();
 
@@ -55,17 +66,13 @@ namespace Shifts
 					shiftEntry.Subject = s.shiftTitle;
 					shiftEntry.Location = s.shiftLocation;
 					shiftCollection.Add (shiftEntry);
-
 				}
+
+				calendar.DataSource = shiftCollection;
 			} catch (Exception e) {
-				
+
 			}
 
-			calendar.DataSource = shiftCollection;
-
-			layout.Children.Add (calendar);
-
-			Content = layout;
 
 		}
 	}
