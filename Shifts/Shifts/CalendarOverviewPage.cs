@@ -41,7 +41,7 @@ namespace Shifts
 			UpdateCalendar ();
 
 			calendar.HorizontalOptions = LayoutOptions.FillAndExpand;
-			calendar.HeightRequest = 400;
+			calendar.VerticalOptions = LayoutOptions.FillAndExpand;
 
 			layout.Children.Add (calendar);
 
