@@ -157,6 +157,7 @@
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="packages.config" />
+    <None Include="Resources\+.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\layout\" />

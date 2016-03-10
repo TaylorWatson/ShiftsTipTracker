@@ -235,5 +235,14 @@
     <BundleResource Include="Resources\AppIcons\logo.png" />
     <ITunesArtwork Include="iTunesArtwork" />
     <ITunesArtwork Include="iTunesArtwork%402x" />
+    <BundleResource Include="Resources\clock.png" />
+    <BundleResource Include="Resources\clock%402x.png" />
+    <BundleResource Include="Resources\clock%403x.png" />
+    <BundleResource Include="Resources\+.png" />
+    <BundleResource Include="Resources\+%402x.png" />
+    <BundleResource Include="Resources\+%403x.png" />
+    <BundleResource Include="Resources\tipPlus.png" />
+    <BundleResource Include="Resources\tipPlus%402x.png" />
+    <BundleResource Include="Resources\tipPlus%403x.png" />
   </ItemGroup>
 </Project>
